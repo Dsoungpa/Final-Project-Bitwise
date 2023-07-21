@@ -1,0 +1,41 @@
+
+.row {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.invisible-column, .column{
+    background-color: #aaa;
+}
+
+/* Invisible column on the left */
+.invisible-column {
+    flex: 70%;
+}
+
+.column {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 0px 50px;
+
+    /* Make sure text doesnt make a new line */
+    white-space: nowrap;
+    
+    /* Set transition for background-color with a 0.3-second duration */
+    transition: background-color 0.3s ease;
+}
+
+.column:hover{
+    background-color: black;
+    color: white;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
