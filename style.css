@@ -7,7 +7,7 @@
 }
 
 .invisible-column, .column{
-    background-color: #aaa;
+    background-color: #57a1ff;
 }
 
 /* Invisible column on the left */
@@ -20,18 +20,52 @@
     flex: 1;
     justify-content: center;
     padding: 0px 50px;
-
-    /* Make sure text doesnt make a new line */
+    color: white;
+    position: relative; /* Required for absolute positioning of ::before pseudo-element */
     white-space: nowrap;
-    
-    /* Set transition for background-color with a 0.3-second duration */
-    transition: background-color 0.3s ease;
+
+    /* Set transition for background-color and ::before with a 0.3-second duration */
+    transition: background-color 0.3s ease, width 0.3s ease;
 }
 
-.column:hover{
-    background-color: black;
+.column::before {
+    content: "";
+    display: inline-block; /* Make the ::before element behave as an inline-block */
+    position: absolute;
+    bottom: 12px;
+    left: 50px;
+    width: 0; /* Initial width is 0 */
+    height: 4px; /* Set the height and style of the underline */
+    background-color: white;
+    border-radius: 10px;
+
+    /* Set transition for width property with a 0.3-second duration */
+    transition: width 0.3s ease;
+}
+
+.column:hover {
+    background-color: #247ff6;
     color: white;
 }
+
+.column.home:hover::before  {
+    width: 30%;
+}
+
+.column.about:hover::before  {
+    width: 40%;
+}
+
+.column.project:hover::before  {
+    width: 35%;
+}
+
+.column.contact:hover::before  {
+    width: 30%;
+}
+
+
+
 
 
 body {
