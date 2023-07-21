@@ -1,59 +1,77 @@
-
-.row {
-    display: flex;
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
+}
+
+.row {
+    /* Makes everything horizontal */
+    display: flex;
 }
 
 .invisible-column, .column{
-    background-color: #57a1ff;
+    /* Creates a gradient for the background of the columns */
+    background: linear-gradient(to bottom, #0d2b5a, #57a1ff);
 }
 
 /* Invisible column on the left */
 .invisible-column {
+    /* Makes this specific column take up 70% of the total navbar */
     flex: 70%;
+    color: white;
+    padding-left: 20px;
 }
 
 .column {
-    display: flex;
+    /* Makes the rest of the colums fill the rest of the space */
     flex: 1;
-    justify-content: center;
-    padding: 0px 50px;
+
+    /* Adjust the space between words without cutting the nav bar*/
+    padding: 5px 50px;
     color: white;
     position: relative; /* Required for absolute positioning of ::before pseudo-element */
-    white-space: nowrap;
 
-    /* Set transition for background-color and ::before with a 0.3-second duration */
-    transition: background-color 0.3s ease, width 0.3s ease;
+    /* Makes Text not make a new-line */
+    white-space: nowrap;
 }
 
+
+/* White underline bar before hovering*/
 .column::before {
+    /* This content property is to be able to create additional content
+    in a ::before or ::after. It can be a string, img, html entity or none.
+    I used none because I am creating a basic shape or line. */
     content: "";
-    display: inline-block; /* Make the ::before element behave as an inline-block */
+
+    /* Make the ::before element behave as an inline-block */
+    display: inline-block; 
     position: absolute;
-    bottom: 12px;
+
+    /* Adjusts positioning */
+    bottom: 15px;
     left: 50px;
-    width: 0; /* Initial width is 0 */
-    height: 4px; /* Set the height and style of the underline */
+
+
+    /* Initial width is 0 */
+    width: 0; 
+    /* Set the height and style of the underline */
+    height: 3px; 
+
     background-color: white;
+    /* Round out the bar */
     border-radius: 10px;
 
     /* Set transition for width property with a 0.3-second duration */
     transition: width 0.3s ease;
 }
 
-.column:hover {
-    background-color: #247ff6;
-    color: white;
-}
-
+/* Makes Bar Grow with hovering*/
 .column.home:hover::before  {
-    width: 30%;
+    width: 25%;
 }
 
 .column.about:hover::before  {
-    width: 40%;
+    width: 35%;
 }
 
 .column.project:hover::before  {
@@ -62,14 +80,4 @@
 
 .column.contact:hover::before  {
     width: 30%;
-}
-
-
-
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
 }
