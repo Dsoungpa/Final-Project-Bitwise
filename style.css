@@ -115,7 +115,8 @@ body {
     
 }
 
-/* Hide all slides except the first one */
+/* Made this to be able to change the display through js
+& adjust the size/positioning */
 .mySlides {
     display: none;
     /* Set the image to fit inside the container, centered */

@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             slideIndex = 0;
         }
 
-        // Repeat the slideshow every 3 seconds (adjust the duration as needed)
-        setTimeout(showSlides, 3000);
+        // Repeat the slideshow every 4 seconds (adjust the duration as needed)
+        setTimeout(showSlides, 4000);
     }
 });
