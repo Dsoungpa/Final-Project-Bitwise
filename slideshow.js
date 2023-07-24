@@ -1,3 +1,5 @@
+// This addEventListener makes sure that the HTML is fully loaded
+// before running the .js file
 document.addEventListener("DOMContentLoaded", function () {
     // JavaScript for image cycle
     let slideIndex = 0;
@@ -12,16 +14,16 @@ document.addEventListener("DOMContentLoaded", function () {
             slides[i].style.display = "none";
         }
 
+        // Show the current slide
+        slides[slideIndex].style.display = "block";
+
         // Increment the slide index
         slideIndex++;
 
         // Reset the index if it goes beyond the number of slides
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
         }
-
-        // Show the current slide
-        slides[slideIndex - 1].style.display = "block";
 
         // Repeat the slideshow every 3 seconds (adjust the duration as needed)
         setTimeout(showSlides, 3000);
