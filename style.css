@@ -4,14 +4,16 @@ body {
     padding: 0;
 }
 
-.row {
+.row, .row2{
     /* Makes everything horizontal */
     display: flex;
 }
 
+
 .invisible-column, .column{
     /* Creates a gradient for the background of the columns */
-    background: linear-gradient(to bottom, #0d2b5a, #57a1ff);
+    /* background: linear-gradient(to bottom, #296bd6, #57a1ff); */
+    background-color: #57a1ff;
 }
 
 /* Invisible column on the left */
@@ -19,7 +21,14 @@ body {
     /* Makes this specific column take up 70% of the total navbar */
     flex: 70%;
     color: white;
-    padding-left: 20px;
+    padding-left: 50px;
+    padding-bottom: 0px;
+}
+
+.invisible-column h2 {
+    font-size: 40px;
+    margin: 0;
+    padding-top: 10px;
 }
 
 .column {
@@ -34,6 +43,57 @@ body {
     /* Makes Text not make a new-line */
     white-space: nowrap;
 }
+
+.image-wheel {
+    background-color: #57a1ff;
+    width: 800px;
+    height: 600px;
+    margin: 100px;
+}
+
+.dylan {
+    font-size: x-large;
+    width: 700px;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 40px;
+    padding: 25px;
+
+    /* Need this to make underline*/
+    /* Added positioning to act as a positioned ancestor for .underline */
+    position: relative;
+}
+
+.careerTitle{
+    color: #57a1ff;
+    margin-top: -20px;
+}
+
+.underline{
+    display: inline-block;
+    position: absolute;
+    border-radius: 10px;
+    background-color: black;
+    height: 5px;
+}
+
+/* .underline1{
+    margin-top: -100px;
+    width: 300px;
+} */
+
+.underline2{
+    /* Adjusts positioning */
+    background-color: #57a1ff;
+    margin-top: -20px;
+    width: 300px;
+}
+
+.bio {
+    color: rgb(35, 35, 35);
+    font-weight: lighter;
+}
+
 
 
 /* White underline bar before hovering*/
