@@ -107,6 +107,7 @@ body {
     justify-content: center;
     align-items: center;
 
+    position: relative;
     /* background-color: #57a1ff; */
     width: 800px;
     height: 600px;
@@ -118,21 +119,20 @@ body {
 /* Made this to be able to change the display through js
 & adjust the size/positioning */
 .mySlides {
-    display: none;
-    /* Set the image to fit inside the container, centered */
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-}
+  position: absolute; /* Use absolute positioning */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  /* Set the image to fit inside the container, centered */
+  width: 100%;
+  height: 100%;
 
-/* Show the first slide */
-.mySlides:first-child {
-    display: block;
-    /* Set the image to fill the container, without maintaining aspect ratio */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  /* object-fit controls how the content (an image or video)
+  should be resized to fit within its container */
+  object-fit: contain;
+
+  /* object-position controls the position of the 
+  content within its container.  */
+  object-position: center;
 }
 
 
