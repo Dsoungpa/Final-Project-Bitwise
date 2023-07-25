@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -14,15 +14,31 @@ body {
     /* Creates a gradient for the background of the columns */
     /* background: linear-gradient(to bottom, #296bd6, #57a1ff); */
     background-color: #57a1ff;
+    color: white;
+}
+
+.footer-column{
+    background-color: #57a1ff;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* Invisible column on the left */
 .invisible-column {
     /* Makes this specific column take up 70% of the total navbar */
     flex: 70%;
-    color: white;
+    
     padding-left: 50px;
     padding-bottom: 0px;
+}
+
+.invisible-column img{
+    max-width: 100%;
+    max-height: 100px; /* Adjust the height as needed */
+    object-fit: contain;
 }
 
 .invisible-column h2 {
@@ -34,14 +50,59 @@ body {
 .column {
     /* Makes the rest of the colums fill the rest of the space */
     flex: 1;
-
+    
     /* Adjust the space between words without cutting the nav bar*/
     padding: 5px 50px;
-    color: white;
     position: relative; /* Required for absolute positioning of ::before pseudo-element */
 
     /* Makes Text not make a new-line */
     white-space: nowrap;
+}
+
+/* White underline bar before hovering*/
+.column::before {
+    /* This content property is to be able to create additional content
+    in a ::before or ::after. It can be a string, img, html entity or none.
+    I used none because I am creating a basic shape or line. */
+    content: "";
+
+    /* Make the ::before element behave as an inline-block */
+    position: absolute;
+
+    /* Adjusts positioning */
+    bottom: 15px;
+    left: 50px;
+
+
+    /* Initial width is 0 */
+    width: 0; 
+    /* Set the height and style of the underline */
+    height: 3px; 
+
+    background-color: white;
+
+    /* Round out the bar */
+    border-radius: 10px;
+
+    /* Set transition for width property with a 0.3-second duration */
+    transition: width 0.3s ease;
+}
+
+/* Makes Bar Grow with hovering*/
+.column.home:hover::before  {
+    width: 25%;
+}
+
+.column.about:hover::before  {
+    width: 35%;
+}
+
+.column.project:hover::before  {
+    width: 35%;
+}
+
+.column.contact:hover::before  {
+    width: 30%;
 }
 
 .dylan {
@@ -135,50 +196,3 @@ body {
   object-position: center;
 }
 
-
-
-/* White underline bar before hovering*/
-.column::before {
-    /* This content property is to be able to create additional content
-    in a ::before or ::after. It can be a string, img, html entity or none.
-    I used none because I am creating a basic shape or line. */
-    content: "";
-
-    /* Make the ::before element behave as an inline-block */
-    display: inline-block; 
-    position: absolute;
-
-    /* Adjusts positioning */
-    bottom: 15px;
-    left: 50px;
-
-
-    /* Initial width is 0 */
-    width: 0; 
-    /* Set the height and style of the underline */
-    height: 3px; 
-
-    background-color: white;
-    /* Round out the bar */
-    border-radius: 10px;
-
-    /* Set transition for width property with a 0.3-second duration */
-    transition: width 0.3s ease;
-}
-
-/* Makes Bar Grow with hovering*/
-.column.home:hover::before  {
-    width: 25%;
-}
-
-.column.about:hover::before  {
-    width: 35%;
-}
-
-.column.project:hover::before  {
-    width: 35%;
-}
-
-.column.contact:hover::before  {
-    width: 30%;
-}
