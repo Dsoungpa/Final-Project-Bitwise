@@ -1,3 +1,8 @@
+/* Smooth scrolling behavior for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', 'Open Sans', sans-serif; /* My 3 Fonts */
 
@@ -269,6 +274,11 @@ Specific lengths depending on Text */
     /* Smooth the transition of background-color change */
     transition: background-color 0.3s ease;
 }
+
+.contact-me a{
+    text-decoration: none; /* Remove underline for links */  
+}
+
 
 .contact-me:hover{
     /* Change the contact me button
