@@ -4,6 +4,15 @@ body {
     padding: 0;
 }
 
+.column a, .invisible-column a{
+    text-decoration: none; /* Remove underline */
+}
+
+a:visited {
+    color: white;
+}
+
+
 .row, .row2{
     /* Makes everything horizontal */
     display: flex;
@@ -146,7 +155,19 @@ body {
     width: 300px;
 }
 
-.underline3{
+.dark-shadow{
+    background-color: #a7c3e3;
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 300px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 3;
+
+    backdrop-filter: blur(10px);
+}
+
+.light-shadow{
     /* Adjusts positioning */
     background-color: #ecf5ff;
     margin-top: 0px;
