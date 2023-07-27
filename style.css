@@ -21,7 +21,7 @@ a:visited {
 }
 
 
-.row, .row2, .row3, .row4{
+.row, .row2, .row3{
     /* Makes everything horizontal */
     display: flex;
 }
@@ -36,9 +36,8 @@ a:visited {
     /* Makes my contact form centered within the row */
     justify-content: center;
     /* Adds 200px of space around my row3 */
-    margin-bottom: 200px;
+    margin-bottom: 30px;
 }
-
 
 .invisible-column, .column{
     /* Makes my nav bar light blue and the text of those white */
@@ -185,7 +184,7 @@ Specific lengths depending on Text */
     width: 700px;
     height: 400px;
     margin-top: 50px;
-    margin-left: 40px;
+    margin-left: 80px;
     padding: 25px;
 
     /* Need this to make underline*/
@@ -295,26 +294,53 @@ Specific lengths depending on Text */
 .contact-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers vertically */
+
 
     /* Adds Space on top */
     margin-top: 50px;
+    /* Adds Space on bottom */
+    margin-bottom: 100px;
+
     /* Adds a border around the contect section */
-    border: 2px solid black;
+    border: 2px solid #57a1ff;
 
     /* Sets Size */
-    width: 500px;
-    height: 500px;
+    width: 1000px;
+    height: 700px;
 
     /* Rounds the section */
     border-radius: 20px;
 }
 
+.contact-section h1, .contact-section .icons {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.contact-section h1 {
+    color: #57a1ff;
+    margin-top: 30px;
+}
+
+.contact-underline {
+    /* Adjusts positioning */
+    background-color: #57a1ff;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 420px;
+    width: 80px;
+}
  
 form {
     /* Formats the form to be a column */
     display: flex;
     flex-direction: column;
+
+    /* Adds Space*/
+    margin-left: 100px;
+    margin-top: 20px;
 
     /* Adjust the input boxes of the form */
     width: 300px;
@@ -329,11 +355,13 @@ input, textarea {
     /* Adjusts spacing around input and textbox */
     padding: 5px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 textarea {
     /* Made the height of the textbox taller */
     height: 100px;
+    width: 800px;
 }
 
 button {
@@ -343,12 +371,19 @@ button {
 
     /* Outside spacing */
     padding: 8px 16px;
+    margin-left: 614px;
 
     /* Removes button border */
     border: none;
 
     /* Rounds Out Button */
-    border-radius: 5px;
+    border-radius: 20px;
+
+    /* Smooth the transition of background-color change */
+    transition: background-color 0.3s ease;
+
+    width: 200px;
+    height: 40px;
 }
   
 button:hover {
@@ -358,8 +393,14 @@ button:hover {
     cursor: pointer;
 }
 
+.icons {
+    display: flex;
+    justify-content: center; /* To center the icons horizontally */
+    gap: 100px; /* Adjust the gap value as per your preference */
+    margin-top: 60px; /* Margin at the top */
+}
 
-.footer-column{
+footer {
     /* Color and size of footer */
     background-color: #57a1ff;
     height: 50px;
