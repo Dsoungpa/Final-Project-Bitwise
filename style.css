@@ -41,7 +41,7 @@ a:visited {
 
 .invisible-column, .column{
     /* Makes my nav bar light blue and the text of those white */
-    background-color: #57a1ff;
+    background-color: #1e3050;
     color: white;
 }
 
@@ -177,7 +177,7 @@ Specific lengths depending on Text */
 
 .dylan {
     /* Specified font color and size */
-    color: rgb(83, 83, 83);
+    color: #1d60d5;
     font-size: x-large;
 
     /* Adjusted dylan container width, height, and outside space */
@@ -195,7 +195,7 @@ Specific lengths depending on Text */
 .careerTitle{
     /* Adjusting font color and positioning of
     "IT Tech | Game Dev" text */
-    color: #57a1ff;
+    color: #1e3050;
     margin-top: -20px;
 }
 
@@ -210,7 +210,7 @@ Specific lengths depending on Text */
 
 .career-underline{
     /* Adjusts positioning */
-    background-color: #57a1ff;
+    background-color: #1e3050;
     border-radius: 10px;
     margin-top: -20px;
     width: 300px;
@@ -221,7 +221,7 @@ Specific lengths depending on Text */
     width: 80%;
 
     /* Font color */
-    color: rgb(83, 83, 83);
+    color: #1e3050;
 
     /* Made the font thinner */
     font-weight: lighter;
@@ -263,7 +263,7 @@ Specific lengths depending on Text */
      /* Centers vertically */
      align-items: center;
 
-    background-color: #57a1ff;
+    background-color: #1e3050;
     /* Font color */
     color: white;
 
@@ -302,7 +302,7 @@ Specific lengths depending on Text */
     margin-bottom: 100px;
 
     /* Adds a border around the contect section */
-    border: 2px solid #57a1ff;
+    border: 2px solid #1e3050;
 
     /* Sets Size */
     width: 1000px;
@@ -320,15 +320,15 @@ Specific lengths depending on Text */
 }
 
 .contact-section h1 {
-    color: #57a1ff;
+    color: #1e3050;
     margin-top: 30px;
 }
 
 .contact-underline {
     /* Adjusts positioning */
-    background-color: #57a1ff;
+    background-color: #1e3050;
     border-radius: 10px;
-    margin-top: 80px;
+    margin-top: 75px;
     margin-left: 420px;
     width: 80px;
 }
@@ -366,7 +366,7 @@ textarea {
 
 button {
     /* Font and background color */
-    background-color: #57a1ff;
+    background-color: #1e3050;
     color: white;
 
     /* Outside spacing */
@@ -388,7 +388,7 @@ button {
   
 button:hover {
     /* Changes background color when hovering */
-    background-color: #305990;
+    background-color: #1d60d5;
     /* Changes cursor to a pointer when over the button */
     cursor: pointer;
 }
@@ -400,9 +400,13 @@ button:hover {
     margin-top: 60px; /* Margin at the top */
 }
 
+.icons i{
+    font-size: 60px;
+}
+
 footer {
     /* Color and size of footer */
-    background-color: #57a1ff;
+    background-color: #1e3050;
     height: 50px;
 
     /* Makes the footer always positioned on the bottom */
