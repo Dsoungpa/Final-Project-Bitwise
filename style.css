@@ -362,6 +362,7 @@ textarea {
     /* Made the height of the textbox taller */
     height: 100px;
     width: 800px;
+    border: 2px solid #1e3050;
 }
 
 button {
@@ -400,7 +401,7 @@ button:hover {
     margin-top: 60px; /* Margin at the top */
 }
 
-.icons i{
+i{
     font-size: 60px;
 }
 
