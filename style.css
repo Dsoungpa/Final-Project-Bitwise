@@ -21,17 +21,22 @@ a:visited {
 }
 
 
-.row, .row2, .row3{
+.row, .row2, .row3, .row4{
     /* Makes everything horizontal */
     display: flex;
+}
+
+.row {
+    position: sticky;
+    top: 0;
+    z-index: 4;
 }
 
 .row3 {
     /* Makes my contact form centered within the row */
     justify-content: center;
-
     /* Adds 200px of space around my row3 */
-    margin: 200px;
+    margin-bottom: 200px;
 }
 
 
@@ -142,7 +147,7 @@ Specific lengths depending on Text */
     /* Adjust image container size and spacing around it */
     width: 800px;
     height: 600px;
-    margin: 100px;
+    margin: 80px 100px 200px 100px;
     padding-left: 100px;
     
 }
@@ -290,14 +295,18 @@ Specific lengths depending on Text */
 .contact-section {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centers vertically */
 
-    align-items: center;
+    /* Adds Space on top */
     margin-top: 50px;
+    /* Adds a border around the contect section */
     border: 2px solid black;
 
+    /* Sets Size */
     width: 500px;
     height: 500px;
 
+    /* Rounds the section */
     border-radius: 20px;
 }
 
