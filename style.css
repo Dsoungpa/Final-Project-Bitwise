@@ -287,7 +287,7 @@ Specific lengths depending on Text */
 .contact-me:hover{
     /* Change the contact me button
     to this color when I hover */
-    background-color: #305990;
+    background-color: #1d60d5;
     cursor: pointer;
 }
 
@@ -366,13 +366,20 @@ textarea {
 }
 
 button {
+
     /* Font and background color */
     background-color: #1e3050;
     color: white;
+    font-size: large;
+    /* Made the font thinner */
+    font-weight: bold;
+
 
     /* Outside spacing */
     padding: 8px 16px;
     margin-left: 614px;
+
+    justify-content: right;
 
     /* Removes button border */
     border: none;
@@ -385,6 +392,7 @@ button {
 
     width: 200px;
     height: 40px;
+    
 }
   
 button:hover {

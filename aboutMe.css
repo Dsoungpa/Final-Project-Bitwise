@@ -20,16 +20,16 @@ a:visited {
                        pages white even after being clicked */
 }
 
-.row{
+.row, .row2, .row3{
     /* Makes everything horizontal */
     display: flex;
 }
 
-.row {
-    position: sticky;
-    top: 0;
-    z-index: 4;
+.row3{
+    margin-top:50px;
+    margin-bottom: 50px;
 }
+
 
 .invisible-column, .column{
     /* Makes my nav bar light blue and the text of those white */
@@ -120,6 +120,100 @@ Specific lengths depending on Text */
 
 .column.contact:hover::before  {
     width: 30%;
+}
+
+.profile-pic {
+    margin: 100px 100px 0px 100px;
+}
+
+.profile-pic img{
+    border-radius: 20px;
+}
+
+.about-me{
+    /* Specified font color and size */
+    color: #1d60d5;
+    font-size: x-large;
+
+    /* Adjusted container width, height, and outside space */
+    margin-top: 50px;
+    margin-left: 80px;
+    padding: 25px;
+
+}
+
+/* Underline */
+.shape{
+    display: inline-block;
+    position: absolute;
+    background-color: black;
+    height: 4px;
+}
+
+.about-underline{
+    /* Adjusts positioning */
+    background-color: #1e3050;
+    border-radius: 10px;
+    margin-top: -20px;
+    width: 100px;
+}
+
+.bio {
+    /* Adjusted the text width space */
+    width: 90%;
+
+    /* Font color */
+    color: #1e3050;
+
+    /* Made the font thinner */
+    font-weight: lighter;
+
+    padding:0;
+}
+
+.resume i {
+    color: #1e3050; 
+    font-size: 60px;
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 100px;
+
+    transition: color 0.3s ease;
+}
+
+.resume i:hover{
+    color: #1d60d5;
+}
+
+.my-resume{
+    margin-top: 5px;
+    margin-left: 90px;
+}
+
+.experience{
+    flex: 50%;
+    /* Specified font color and size */
+    color: #1d60d5;
+    font-size: x-large;
+
+    /* Adjusted container width, height, and outside space */
+    margin-left: 100px;
+    padding: 25px;
+}
+
+.row3 p{
+    color: #1e3050;
+}
+
+.education{
+    flex:50%;
+    /* Specified font color and size */
+    color: #1d60d5;
+    font-size: x-large;
+
+    /* Adjusted container width, height, and outside space */
+    margin-left: 100px;
+    padding: 25px;
 }
 
 footer {
