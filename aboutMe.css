@@ -104,23 +104,23 @@ a:visited {
     transition: width 0.3s ease;
 }
 
+.column.about::before  {
+    width: 35%;
+}
+
 /* Makes Bar Grow with hovering
 Specific lengths depending on Text */
 .column.home:hover::before  {
     width: 25%;
 }
 
-.column.about:hover::before  {
-    width: 35%;
-}
+
 
 .column.project:hover::before  {
     width: 35%;
 }
 
-.column.contact:hover::before  {
-    width: 30%;
-}
+
 
 .profile-pic {
     margin: 100px 100px 0px 100px;
