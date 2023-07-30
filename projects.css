@@ -117,6 +117,32 @@ Specific lengths depending on Text */
 .column.project::before  {
     width: 35%;
 }
+
+.projects{
+    /* Specified font color and size */
+    color: #1d60d5;
+    font-size: x-large;
+
+    /* Adjusted container width, height, and outside space */
+    margin-top: 0px;
+    margin-left: 80px;
+    padding: 0px;
+}
+
+/* Underline */
+.shape{
+    display: inline-block;
+    position: absolute;
+    background-color: black;
+    height: 4px;
+}
+.project-underline{
+    /* Adjusts positioning */
+    background-color: #1e3050;
+    border-radius: 10px;
+    margin-top: -20px;
+    width: 100px;
+}
 footer {
     /* Color and size of footer */
     background-color: #1e3050;

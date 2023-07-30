@@ -20,15 +20,21 @@ a:visited {
                        pages white even after being clicked */
 }
 
-.row, .row2, .row3{
+.row, .row2, .row3, .row4, .row5{
     /* Makes everything horizontal */
     display: flex;
 }
 
-.row3{
+.row3, .row4, .row5{
     margin-top:50px;
     margin-bottom: 50px;
 }
+
+.row5{
+    margin-left: 200px;
+}
+
+
 
 
 .invisible-column, .column{
@@ -150,6 +156,14 @@ Specific lengths depending on Text */
     height: 4px;
 }
 
+.about-underline{
+    /* Adjusts positioning */
+    background-color: #1e3050;
+    border-radius: 10px;
+    margin-top: -20px;
+    width: 100px;
+}
+
 .divider-underline{
     /* Adjusts positioning */
     background-color: #1e3050;
@@ -157,14 +171,6 @@ Specific lengths depending on Text */
     margin-top: -20px;
     margin-left: 200px;
     width: 1500px; 
-}
-
-.about-underline{
-    /* Adjusts positioning */
-    background-color: #1e3050;
-    border-radius: 10px;
-    margin-top: -20px;
-    width: 100px;
 }
 
 .bio {
@@ -233,6 +239,46 @@ Specific lengths depending on Text */
     margin-bottom: -10px;
     padding-bottom: 0;
 }
+
+.skills {
+     /* Specified font color and size */
+     color: #1d60d5;
+     font-size: x-large;
+ 
+    position: absolute;
+    left: 47%;
+}
+
+.skills-underline{
+    /* Adjusts positioning */
+    background-color: #1e3050;
+    border-radius: 10px;
+    margin-top: -20px;
+    width: 50px;
+    height: 5px;
+}
+
+.skills-list{
+    display: flex;
+    /* Adjusted container width, height, and outside space */
+    padding: 50px;
+}
+
+.skills-list li{
+    list-style-type: circle;
+    /* Specified font color and size */
+    color: #1d60d5;
+    font-size: x-large;
+    margin: 50px;
+}
+
+.skills-list h2{
+    color:#1e3050;
+}
+
+
+
+
 
 footer {
     /* Color and size of footer */
