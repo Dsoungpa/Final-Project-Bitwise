@@ -25,6 +25,13 @@ a:visited {
     display: flex;
 }
 
+
+.row {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
 .row3, .row4, .row5{
     margin-top:50px;
     margin-bottom: 50px;
@@ -246,7 +253,7 @@ Specific lengths depending on Text */
      font-size: x-large;
  
     position: absolute;
-    left: 47%;
+    left: 46%;
 }
 
 .skills-underline{
@@ -262,18 +269,21 @@ Specific lengths depending on Text */
     display: flex;
     /* Adjusted container width, height, and outside space */
     padding: 50px;
+    margin-left: 100px;
 }
 
 .skills-list li{
     list-style-type: circle;
     /* Specified font color and size */
     color: #1d60d5;
-    font-size: x-large;
+    font-size: large;
     margin: 50px;
+    
 }
 
 .skills-list h2{
     color:#1e3050;
+    font-weight: lighter;
 }
 
 

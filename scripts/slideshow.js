@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slideIndex++;
   
       // Repeat the slideshow every 4 seconds (adjust the duration as needed)
-      setTimeout(showSlides, 4000);
+      setTimeout(showSlides, 2500);
     }
   });
   
