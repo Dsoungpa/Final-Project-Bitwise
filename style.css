@@ -348,6 +348,7 @@ label {
 }
 
 input, textarea {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     /* Adjusts spacing around input and textbox */
     padding: 5px;
     margin-bottom: 10px;

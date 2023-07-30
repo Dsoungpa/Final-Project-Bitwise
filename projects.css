@@ -114,14 +114,9 @@ Specific lengths depending on Text */
     width: 35%;
 }
 
-.column.project:hover::before  {
+.column.project::before  {
     width: 35%;
 }
-
-.column.contact:hover::before  {
-    width: 30%;
-}
-
 footer {
     /* Color and size of footer */
     background-color: #1e3050;
