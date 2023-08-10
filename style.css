@@ -179,8 +179,8 @@ Specific lengths depending on Text */
     /* Adjusted dylan container width, height, and outside space */
     width: 700px;
     height: 400px;
-    margin-top: 50px;
-    margin-left: 80px;
+    margin-top: 75px;
+    margin-left: 200px;
     padding: 25px;
 
     /* Need this to make underline*/
