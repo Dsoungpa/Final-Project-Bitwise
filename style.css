@@ -142,8 +142,9 @@ Specific lengths depending on Text */
     /* Adjust image container size and spacing around it */
     width: 800px;
     height: 600px;
-    margin: 80px 100px 200px 100px;
+    margin: 90px 100px 200px 140px;
     padding-left: 100px;
+    
     
 }
 
@@ -180,7 +181,7 @@ Specific lengths depending on Text */
     width: 700px;
     height: 400px;
     margin-top: 75px;
-    margin-left: 200px;
+    margin-left: 100px;
     padding: 25px;
 
     /* Need this to make underline*/
