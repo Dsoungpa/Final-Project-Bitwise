@@ -9,6 +9,14 @@ body {
     /* This makes sure there is no spacing included with the body */
     margin: 0;
     padding: 0;
+    background-color: #2a487c;
+}
+
+button {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border: 1px solid white;
 }
 
 .column a, .invisible-column a{
@@ -31,11 +39,22 @@ a:visited {
     z-index: 4;
 }
 
-.row5, .row7{
-    margin-top: 200px;
+.row3 {
+    margin-top: 50px;
+}
+
+.row4 {
+    
+    margin-bottom: 100px;
+}
+
+.row5 {
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .row7 {
+    margin-top: 50px;
     margin-bottom: 150px;
 }
 
@@ -206,6 +225,7 @@ Specific lengths depending on Text */
 }
 
 .bb-vert-imgs{
+    display: flex;
     margin-left: 250px;
 }
 
@@ -216,7 +236,7 @@ Specific lengths depending on Text */
 
 .role {
     width: 40%;
-    margin-left: 160px;
+    margin-left: 165px;
     margin-top: 0px;
 }
 
@@ -249,6 +269,34 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #1e3050;
+    
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #2a487c;
+  }
+  
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 
