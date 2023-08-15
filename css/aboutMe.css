@@ -25,16 +25,20 @@ a:visited {
     display: flex;
 }
 
-
 .row {
     position: sticky;
     top: 0;
     z-index: 4;
 }
 
-.row3, .row4, .row5{
+.row3, .row5{
     margin-top:50px;
     margin-bottom: 50px;
+}
+
+.row4{
+
+    margin-bottom: 100px;
 }
 
 .row5{
@@ -155,6 +159,10 @@ Specific lengths depending on Text */
 
 }
 
+.about-title{
+    margin-bottom: 50px;
+}
+
 /* Underline */
 .shape{
     display: inline-block;
@@ -212,6 +220,8 @@ Specific lengths depending on Text */
     margin-left: 90px;
 }
 
+
+
 .experience{
     flex: 50%;
     /* Specified font color and size */
@@ -221,6 +231,10 @@ Specific lengths depending on Text */
     /* Adjusted container width, height, and outside space */
     margin-left: 100px;
     padding: 25px;
+}
+
+.experience-title{
+    margin-bottom: 50px;
 }
 
 .experience h3{
@@ -240,6 +254,10 @@ Specific lengths depending on Text */
     /* Adjusted container width, height, and outside space */
     margin-left: 100px;
     padding: 25px;
+}
+
+.education-title{
+    margin-bottom: 50px;
 }
 
 .education h3{
@@ -287,10 +305,13 @@ Specific lengths depending on Text */
 }
 
 iframe{
-    margin-top: 400px;
+    margin-top: 300px;
     border-radius: 10px;
 }
 
+.parent-li{
+    margin-bottom: 50px;
+}
 
 
 
