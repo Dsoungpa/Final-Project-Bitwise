@@ -329,6 +329,12 @@ Specific lengths depending on Text */
     margin-left: 420px;
     width: 80px;
 }
+
+@media (max-width: 1000px) {
+    .contact-underline {
+        background-color: white;
+    }
+}
  
 form {
     /* Formats the form to be a column */
@@ -358,9 +364,19 @@ input, textarea {
 
 textarea {
     /* Made the height of the textbox taller */
-    height: 100px;
+    height: 200px;
     width: 800px;
     border: 2px solid #1e3050;
+}
+
+
+@media (max-width: 768px) {
+    textarea{
+        height: 200px;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 button {
@@ -400,11 +416,24 @@ button:hover {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    button{
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+}
+
 .icons {
     display: flex;
     justify-content: center; /* To center the icons horizontally */
     gap: 100px; /* Adjust the gap value as per your preference */
-    margin-top: 60px; /* Margin at the top */
+    margin-top: 20px; /* Margin at the top */
+}
+
+@media (max-width: 768px) {
+    .icons{
+        margin-top: 0;
+    }
 }
 
 i{
