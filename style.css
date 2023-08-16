@@ -171,6 +171,21 @@ Specific lengths depending on Text */
   content within its container.  */
   object-position: center;
 }
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the floating distance as needed */
+    }
+}
+
+.floating {
+    /* Add animation properties */
+    animation: floating 3s infinite; /* Adjust duration as needed */
+    animation-timing-function: ease-in-out; /* Smooth easing in and out */
+    
+}
 
 .dylan {
     /* Specified font color and size */
@@ -187,6 +202,7 @@ Specific lengths depending on Text */
     /* Need this to make underline*/
     /* Added positioning to act as a positioned ancestor for .underline */
     position: relative;
+
 }
 
 .careerTitle{
@@ -224,6 +240,28 @@ Specific lengths depending on Text */
     font-weight: lighter;
 }
 
+@keyframes expandDarkShadow {
+    0%, 100% {
+        width: 325px; /* Expanded width */
+        margin-left: 87.5px;
+    }
+    50% {
+        width: 300px; /* Original width */
+        margin-left: 100px;
+    }
+}
+
+@keyframes expandLightShadow {
+    0%, 100% {
+        width: 525px; /* Expanded width */
+        margin-left: -12.5px;
+    }
+    50% {
+        width: 500px; /* Original width */
+        margin-left: 0px;
+    }
+}
+
 .dark-shadow{
     background-color: #a7c3e3;
 
@@ -237,6 +275,10 @@ Specific lengths depending on Text */
     border-radius: 50%;
     /* Forcefully put this above the other shadow */
     z-index: 3;
+
+    /* Add animation properties */
+    animation: expandDarkShadow 3s infinite; /* Adjust duration as needed */
+    animation-timing-function: ease-in-out; /*Smooth easing in and out */
 }
 
 .light-shadow{
@@ -251,6 +293,9 @@ Specific lengths depending on Text */
 
     /* Rounding out the shape */
     border-radius: 50%;
+    animation: expandLightShadow 3s infinite; /* Adjust duration as needed */
+    animation-timing-function: ease-in-out; /*Smooth easing in and out */
+
 }
 
 .contact-me {
