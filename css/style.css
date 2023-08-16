@@ -329,12 +329,6 @@ Specific lengths depending on Text */
     margin-left: 420px;
     width: 80px;
 }
-
-@media (max-width: 1000px) {
-    .contact-underline {
-        background-color: white;
-    }
-}
  
 form {
     /* Formats the form to be a column */
@@ -367,16 +361,6 @@ textarea {
     height: 200px;
     width: 800px;
     border: 2px solid #1e3050;
-}
-
-
-@media (max-width: 768px) {
-    textarea{
-        height: 200px;
-        width: 300px;
-        margin: 0;
-        padding: 0;
-    }
 }
 
 button {
@@ -416,12 +400,6 @@ button:hover {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    button{
-        margin-left: 50px;
-        margin-bottom: 20px;
-    }
-}
 
 .icons {
     display: flex;
@@ -430,11 +408,6 @@ button:hover {
     margin-top: 20px; /* Margin at the top */
 }
 
-@media (max-width: 768px) {
-    .icons{
-        margin-top: 0;
-    }
-}
 
 i{
     font-size: 60px;
@@ -450,6 +423,55 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+@media (max-width: 1000px) {
+    .contact-underline {
+        background-color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    textarea{
+        height: 200px;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    button{
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .icons{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .row2 {
+        flex-direction: column; /* Stack the sections vertically, with slideshow on top */
+        justify-content: center;
+    }
+
+    .slideshow-container {
+        /* Adjust positioning and margin to stack slideshow on top */
+        margin: 20px auto;
+        width: 80%; /* Adjust width as needed */
+    }
+
+    .dylan {
+        width: 100%; /* Expand Dylan bio section to full width */
+        margin: 0 auto 200px 150px; /* Add margin to separate sections */
+
+    }
 }
 
 
