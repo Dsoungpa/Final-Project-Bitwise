@@ -331,6 +331,7 @@ Specific lengths depending on Text */
     to this color when I hover */
     background-color: #1d60d5;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .contact-section {
@@ -344,7 +345,7 @@ Specific lengths depending on Text */
     margin-bottom: 100px;
 
     /* Adds a border around the contect section */
-    border: 2px solid #1e3050;
+    border: 5px solid #1e3050;
 
     /* Sets Size */
     width: 1000px;
@@ -443,6 +444,7 @@ button:hover {
     background-color: #1d60d5;
     /* Changes cursor to a pointer when over the button */
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 
@@ -451,6 +453,10 @@ button:hover {
     justify-content: center; /* To center the icons horizontally */
     gap: 100px; /* Adjust the gap value as per your preference */
     margin-top: 20px; /* Margin at the top */
+}
+
+.icons a:hover{
+    transform: scale(1.1);
 }
 
 

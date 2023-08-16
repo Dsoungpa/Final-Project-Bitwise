@@ -208,6 +208,7 @@ Specific lengths depending on Text */
 
 .resume i:hover{
     color: #1d60d5;
+    transform: scale(1.1);
 }
 
 .my-resume{

@@ -210,10 +210,12 @@ Specific lengths depending on Text */
 .bb-section {
     margin-top: 0px;
     margin-left: 100px;
+    position: relative;
 }
 
 .Ditw-section{
     margin-left: 100px;
+    position: relative;
 }
 
 .bb-underline{
@@ -257,6 +259,7 @@ Specific lengths depending on Text */
 
 .sc-section{
     margin-left: 200px;
+    position: relative;
 }
 
 footer {
@@ -304,9 +307,75 @@ footer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
 
-    
+/* White underline bar before hovering*/
+.right::before {
+    /* This content property is to be able to create additional content
+    in a ::before or ::after. It can be a string, img, html entity or none.
+    I used none because I am creating a basic shape or line. */
+    content: "";
+
+    /* Makes the position of the underline exactly where I want,
+    in perspective to the container (relative) */
+    position: absolute;
+
+    /* Adjusts positioning of underline */
+    top: 70px;
+    left: 0px;
+
+    /* Initial width is 0 */
+    width: 0; 
+    /* Set the height and style of the underline */
+    height: 5px; 
+
+    background-color: #1e3050;
+    /* Round out the underline bar */
+    border-radius: 10px;
+    /* Set transition for width property with a 0.3-second duration */
+    transition: width 0.3s ease;
+}
+
+.left::before {
+    /* This content property is to be able to create additional content
+    in a ::before or ::after. It can be a string, img, html entity or none.
+    I used none because I am creating a basic shape or line. */
+    content: "";
+
+    /* Makes the position of the underline exactly where I want,
+    in perspective to the container (relative) */
+    position: absolute;
+
+    /* Adjusts positioning of underline */
+    top: 70px;
+    left: 0px;
+
+    /* Initial width is 0 */
+    width: 0; 
+    /* Set the height and style of the underline */
+    height: 5px; 
+
+    background-color: #1e3050;
+    /* Round out the underline bar */
+    border-radius: 10px;
+    /* Set transition for width property with a 0.3-second duration */
+    transition: width 0.3s ease;
 }
 
 
 
+.right.bb:hover::before  {
+    width: 20%;
+}
+
+.left.dice:hover::before {
+    width: 10%;
+}
+
+/* .right.solus:hover::before{
+    width: 10%;
+} */
+
+img:hover{
+    transform: scale(1.05);
+}
