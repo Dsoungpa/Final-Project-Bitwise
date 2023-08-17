@@ -523,7 +523,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
     textarea{
         height: 200px;
@@ -564,7 +564,7 @@ footer {
 
     .dylan {
         width: 100%; /* Expand Dylan bio section to full width */
-        margin: 0 auto 200px 150px; /* Add margin to separate sections */
+        margin: 0 auto 200px 50px; /* Add margin to separate sections */
 
     }
 }
