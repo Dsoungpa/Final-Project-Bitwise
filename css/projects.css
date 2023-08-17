@@ -4,13 +4,15 @@ html {
 }
 
 body {
-    font-family: 'Roboto', 'Open Sans', sans-serif; /* My 3 Fonts */
-
-    /* This makes sure there is no spacing included with the body */
+    font-family: 'Poppins', 'Open Sans', sans-serif; /* My 3 Fonts */
     margin: 0;
     padding: 0;
-    background-color: #2a487c;
+    background-image: url('../images/background.jpg'); /* Replace with the actual image path */
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
 }
+
 
 button {
     display: flex;
@@ -276,6 +278,8 @@ footer {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+    font-family: 'Poppins', 'Open Sans', sans-serif; /* My 3 Fonts */
+
     background-color: #1e3050;
     margin: 0;
     padding: 0;
@@ -297,6 +301,7 @@ footer {
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
     background-color: #2a487c;
+    transform: scale(1.1);
   }
   
 /* Style the accordion panel. Note: hidden by default */

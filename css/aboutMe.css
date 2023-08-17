@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', 'Open Sans', sans-serif; /* My 3 Fonts */
+    font-family: 'Poppins', 'Open Sans', sans-serif; /* My 3 Fonts */
 
     /* This makes sure there is no spacing included with the body */
     margin: 0;
@@ -29,6 +29,10 @@ a:visited {
     position: sticky;
     top: 0;
     z-index: 4;
+}
+
+.row2 {
+    margin-bottom: -25px;
 }
 
 .row3, .row5{
@@ -135,7 +139,7 @@ Specific lengths depending on Text */
 
 
 .profile-pic {
-    margin: 100px 100px 0px 100px;
+    margin: 200px 100px 0px 100px;
 }
 
 .profile-pic img{
@@ -148,7 +152,7 @@ Specific lengths depending on Text */
     font-size: x-large;
 
     /* Adjusted container width, height, and outside space */
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 80px;
     padding: 25px;
 
@@ -156,6 +160,10 @@ Specific lengths depending on Text */
 
 .about-title{
     margin-bottom: 50px;
+}
+
+.highlight {
+    font-weight: bold;
 }
 
 /* Underline */
@@ -190,6 +198,8 @@ Specific lengths depending on Text */
     /* Font color */
     color: #1e3050;
 
+    font-size: 26px;
+
     /* Made the font thinner */
     font-weight: lighter;
 
@@ -201,7 +211,7 @@ Specific lengths depending on Text */
     font-size: 60px;
     margin-top: 100px;
     margin-right: 200px;
-    margin-left: 100px;
+    margin-left: 105px;
 
     transition: color 0.3s ease;
 }
@@ -301,7 +311,7 @@ Specific lengths depending on Text */
 }
 
 iframe{
-    margin-top: 300px;
+    margin-top: 500px;
     border-radius: 10px;
 }
 

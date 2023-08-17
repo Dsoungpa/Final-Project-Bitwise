@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>Dylan's Portfolio</title>
         <!-- CSS File -->
         <link rel="stylesheet" type="text/css" href="./style.css" /> 
 
         <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap">
 
@@ -17,9 +23,17 @@
 
         <!-- Slideshow Script -->
         <script src="./scripts/slideshow.js"></script>
+        <script src="./scripts/loading.js"></script>
     </head>
 
     <body>
+        <!-- Loading Screen with Loading Bar -->
+        <div id="loading-screen">
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <h1>Loading Dylan's Portfolio...</h1>
+        </div>
         <!-- Nav Bar / "Row" -->
         <div class="row">
             <!-- Invisible left column -->
@@ -116,6 +130,8 @@
                 
             </div>
         </div>
+
+        
 
     </body>
 

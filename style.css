@@ -4,11 +4,56 @@ html {
 }
 
 body {
-    font-family: 'Roboto', 'Open Sans', sans-serif; /* My 3 Fonts */
+    font-family: 'Poppins', 'Open Sans', sans-serif; /* My 3 Fonts */
 
     /* This makes sure there is no spacing included with the body */
     margin: 0;
     padding: 0;
+}
+
+/* Styles for the loading bar and loading progress */
+#loading-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #1e3050;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 9999;
+
+}
+
+.loading-bar {
+    width: 30%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #1d60d5;
+    margin-top: 10px;
+    position: relative;
+    
+}
+
+.loading-progress {
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .column a, .invisible-column a{
@@ -196,7 +241,7 @@ Specific lengths depending on Text */
     width: 700px;
     height: 400px;
     margin-top: 75px;
-    margin-left: 100px;
+    margin-left: 50px;
     padding: 25px;
 
     /* Need this to make underline*/
@@ -340,16 +385,16 @@ Specific lengths depending on Text */
 
 
     /* Adds Space on top */
-    margin-top: 50px;
+    margin-top: 0px;
     /* Adds Space on bottom */
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 
     /* Adds a border around the contect section */
     border: 5px solid #1e3050;
 
     /* Sets Size */
     width: 1000px;
-    height: 700px;
+    height: 750px;
 
     /* Rounds the section */
     border-radius: 20px;
@@ -410,6 +455,7 @@ textarea {
 }
 
 button {
+    font-family: 'Poppins', 'Open Sans', sans-serif; /* My 3 Fonts */
 
     /* Font and background color */
     background-color: #1e3050;
@@ -476,37 +522,35 @@ footer {
     right: 0;
 }
 
-@media (max-width: 1000px) {
-    .contact-underline {
-        background-color: white;
-    }
-}
 
 @media (max-width: 768px) {
+
     textarea{
         height: 200px;
         width: 300px;
         margin: 0;
         padding: 0;
     }
-}
 
-
-@media (max-width: 768px) {
     button{
         margin-left: 50px;
         margin-bottom: 20px;
     }
-}
 
-
-@media (max-width: 768px) {
     .icons{
-        margin-top: 0;
+        margin-top: 20px;
+    }
+
+    .row2 {
+        margin-bottom: 200px;
+    }
+
+    .contact-underline {
+        margin-left: 10000px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .row2 {
         flex-direction: column; /* Stack the sections vertically, with slideshow on top */
         justify-content: center;
