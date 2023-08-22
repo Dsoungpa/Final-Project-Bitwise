@@ -520,7 +520,52 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
+
+@media (max-width: 768px) {
+    body {
+      font-size: 16px; /* Adjust font size for mobile */
+    }
+  
+    .invisible-column {
+        display: none; /* Hide the left column on mobile */
+    }
+
+    .column {
+        /* Makes the rest of the columns fill the rest of the space evenly 
+        considering the first column "invisible-column is taking 70%
+        
+        So the rest of the columns will use the remaining 30% evenly. */
+        flex: 1;
+        
+        /* Adjust the space between words without cutting the nav bar */
+        padding: 5px 25px;
+    }
+
+    .column::before{
+        position: absolute;
+        left: 25px;
+    }
+
+    .dylan{
+        font-size: 22px;
+    }
+
+    .careerTitle{
+        width: 80%;
+    }
+    /* Adjust padding and margin for smaller screens */
+    .row2 {
+      margin-bottom: 100px;
+    }
+  
+    /* Adjust spacing between icons */
+    .icons {
+      gap: 20px;
+    }
+  }
+  
 
 
 @media (max-width: 1000px) {
@@ -542,7 +587,9 @@ footer {
     }
 
     .row2 {
+        margin-left: -50px;
         margin-bottom: 200px;
+        font-size: xx-small;
     }
 
     .contact-underline {
