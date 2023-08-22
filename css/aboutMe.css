@@ -345,6 +345,73 @@ iframe{
     margin-bottom: 150px;
 }
 
+@media (max-width: 768px) {
+    body {
+      font-size: 16px; /* Adjust font size for mobile */
+    }
+  
+    .invisible-column {
+        display: none; /* Hide the left column on mobile */
+    }
+
+    .column {
+        /* Makes the rest of the columns fill the rest of the space evenly 
+        considering the first column "invisible-column is taking 70%
+        
+        So the rest of the columns will use the remaining 30% evenly. */
+        flex: 1;
+        
+        /* Adjust the space between words without cutting the nav bar */
+        padding: 5px 25px;
+    }
+
+    .column::before{
+        position: absolute;
+        left: 25px;
+    }
+
+    /* Adjust padding and margin for smaller screens */
+    .row2, .row3, .skills-list, .art-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profile-pic img{
+        width: 300px;
+
+    }
+
+    .resume{
+        margin-left: auto;
+    }
+
+    .divider-underline{
+        margin-left: 125px;
+        width: 300px
+    }
+
+    .education{
+        margin-bottom: 0px;
+    }
+
+    .skills-list{
+        margin-left: -150px;
+    }
+
+    .art-container img{
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    iframe {
+        width: 300px;
+    }
+
+    
+
+
+}
+
 
 footer {
     /* Color and size of footer */
